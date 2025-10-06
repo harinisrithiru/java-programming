@@ -1,0 +1,31 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        int c1=sc.nextInt();
+        int q1=sc.nextInt();
+        int c2=sc.nextInt();
+        int q2=sc.nextInt();
+        int c3=sc.nextInt();
+        int q3=sc.nextInt();
+        int bud=sc.nextInt();
+        int total= (c1*q1)+(c2*q2)+(c3*q3);
+        double atax=total*1.10;
+        System.out.printf("Total (Before Tax): %.2f\n",(double)total);
+        System.out.printf("Total (After Tax): %.2f\n",atax);
+        if(total<bud){
+            System.out.print("Within Budget");
+        }
+        else{
+            System.out.print("Over Budget");
+            
+        }
+        
+        
+    
+    }
+}
