@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        char input = sc.next().charAt(0);
+        if(Character.isUpperCase(input)){
+            System.out.println("Uppercase Alphabet");
+        }else if (Character.isLowerCase(input)) {
+            System.out.println("Lowercase Alphabet");
+        } else if (Character.isDigit(input)) {
+            System.out.println("Digit");
+        } else {
+            System.out.println("Special Character");
+        }
+        
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
